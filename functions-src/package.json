@@ -1,0 +1,11 @@
+{
+  "name": "functions-src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Piedra <ipiedra@cecropiasolutions.com> (https://plus.google.com/100045045450129923111)",
+  "license": "MIT"
+}
