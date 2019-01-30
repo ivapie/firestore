@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel functions-src -d build && cp ./package.json build/package.json"
+    "clean": "rm -rf build && mkdir build",
+    "build-server": "babel -d ./build ./functions-src -s && cp ./package.json build/package.json",
+    "build": "npm run clean && npm run build-server",
+    "deploy": ""
   },
   "author": "Ivan Piedra <ipiedra@cecropiasolutions.com> (https://plus.google.com/100045045450129923111)",
   "license": "MIT",
@@ -16,7 +19,7 @@
   "devDependencies": {
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "babel-preset-env": "^1.7.0"
   },
   "engineStrict": true,
   "engines": {

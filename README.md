@@ -26,13 +26,30 @@ npm install
 
 ## Deploy Functions
 
-createEntrySensorCollection
+1. On root path, run
+```
+npm run build
+```
+
+2. On root path run
+```
+cd build
+```
+
+3. CLI Command
+```
+gcloud functions ....
+```
+
+## List of the GCloud
+
+1. createEntrySensorCollection
 
 ```
 gcloud functions deploy createEntrySensorCollection --runtime nodejs6 --trigger-http
 ```
 
-listEntriesSensor
+2. listEntriesSensor
 
 ```
 gcloud functions deploy listEntriesSensor --runtime nodejs6 --trigger-http
@@ -40,14 +57,16 @@ gcloud functions deploy listEntriesSensor --runtime nodejs6 --trigger-http
 
 ## Deployment
 
-on path, run
-```
-npm run build
-```
+Using the Local Functions Emulator
 
-cd build
 ```
-gcloud functions ....
+https://cloud.google.com/functions/docs/emulator
+
+
+or
+
+```
+https://rominirani.com/google-cloud-functions-tutorial-using-the-local-functions-emulator-bd351bbe61de
 ```
 
 ## Authors
